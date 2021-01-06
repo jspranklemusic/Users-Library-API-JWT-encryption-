@@ -1,0 +1,10 @@
+html
+  head
+    #{title}
+  body
+    h1 #{message}
+    p Creating, deleting, updating, and reading users.
+    h3 #{users.length} TOTAL USERS:
+    ol
+      each user in users
+        li=`${user.firstName} ${user.lastName}, age ${user.age}, favorite food: ${user.favoriteFood}`
